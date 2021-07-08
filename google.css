@@ -151,3 +151,8 @@ body {
 .main {
     height: 100%;
 }
+
+body, input, button {
+    font-family: arial;
+    /* font-family: Pacifico; */
+}
