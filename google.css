@@ -3,10 +3,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: inherit;
-}
-
 a:hover {
     text-decoration: underline
 }
@@ -17,7 +13,7 @@ a:hover {
 
 .nav-link-left {
     display: inline-block;
-    padding: 5px;
+    padding: 20px;
     margin: 0 5px;
     color: #222;
     text-decoration: none;
@@ -28,7 +24,12 @@ a:hover {
     line-height: 24px;
     vertical-align: middle;
     text-decoration: none;
+    padding: 20px;
     margin-right: 20px;
+}
+
+.nav-link-right:visited {
+    color: inherit;
 }
 
 .nav-link-right-gap {
@@ -41,6 +42,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .search-box {
@@ -95,14 +97,6 @@ a:hover {
     outline: none;
 }
 
-
-.privacy {
-    display: flex;
-    align-items: center;
-    font-size: small;
-}
-
-
 .language {
     font-size: small;
 }
@@ -111,10 +105,6 @@ a:hover {
     background: #f2f2f2;
     flex-shrink: 0;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 
@@ -143,4 +133,21 @@ a:hover {
 .footer-link {
     color: #70757a;
     margin-right: 20px;
+}
+
+
+/* Centre the middle part */
+html, 
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: 100%;
 }
