@@ -24,30 +24,32 @@
           width="272"
         />
       </div>
-      <div>
-        <input
-          class="gLFyf gsfi"
-          jsaction="paste:puy29d;"
-          maxlength="2048"
-          name="q"
-          type="text"
-          aria-autocomplete="both"
-          aria-haspopup="false"
-          autocapitalize="off"
-          autocomplete="off"
-          autocorrect="off"
-          autofocus=""
-          role="combobox"
-          spellcheck="false"
-          title="Search"
-          value=""
-          aria-label="Search"
-        />
-      </div>
-      <div>
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
-      </div>
+      <form action="https://google.ca/search" method="GET" role="search" class="search-box-container">
+        <div class="search-box-container">
+          <input
+            class="search-box"
+            jsaction="paste:puy29d;"
+            maxlength="2048"
+            name="q"
+            type="text"
+            aria-autocomplete="both"
+            aria-haspopup="false"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            autofocus=""
+            role="combobox"
+            spellcheck="false"
+            title="Search"
+            value=""
+            aria-label="Search"
+          />
+        </div>
+        <div class="search-buttons">
+          <input class="button" value="Google Search" aria-label="Google Search" type="submit" />
+          <button class="button">I'm Feeling Lucky</button>
+        </div>
+      </form>
       <div>
         <img src="https://www.google.com/images/hpp/shield_privacy_checkup_green_2x_web_96dp.png" />
         <a href="https://myaccount.google.com/privacycheckup">Complete your Privacy Checkup</a>
