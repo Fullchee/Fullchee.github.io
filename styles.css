@@ -1,0 +1,31 @@
+.unordered-list {
+    list-style-type: square;
+}
+
+.some-text {
+    background-color: #eee;
+    padding: 20px;
+    border: 5px dotted #aaa;
+    margin: 50px;
+}
+
+
+/* SPECIFICITY */
+#specificity {
+    /* IDs have higher specificity than 1 million classes */
+    color: purple;
+}
+
+.specificity-container .specificity-content {
+    /* Multiple classes override single classes */
+    color: blue;
+}
+
+.specificity-content {
+    color: violet;
+}
+
+div p {
+    /* Even though there's 2 selectors, it gets overriden by properties with more specificity */
+    color: green;
+}

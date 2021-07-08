@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Page with some HTML</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
@@ -10,9 +11,13 @@
       <h2>h2 tags are a bit smaller</h2>
       <h3>h3 tags are even smaller</h3>
 
-      <p>Here's some text -&gt;</p>
+      <p class="some-text">Here's some text -&gt;</p>
 
-      <ul>
+      <div class="specificity-container">
+        <p id="specificity" class="specificity-content">CSS Specificity</p>
+      </div>
+
+      <ul class="unordered-list">
         <li>1 can (400g) of chick peas (garbanzo beans)</li>
         <li>175g of tahini</li>
         <li>6 sundried tomatoes</li>
@@ -44,6 +49,8 @@
           alt="this is some alternative text that shows up if the image can't be shown"
         />
       </div>
+
+      <invalidhtmltag>Cool</invalidhtmltag>
     </main>
 
     <footer>
